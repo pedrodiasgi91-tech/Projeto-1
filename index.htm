@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: white;
+    }
+
+    .container{
+      background: #1e293b;
+      width: 400px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1{
+      text-align: center;
+      margin-bottom: 25px;
+      color: #38bdf8;
+    }
+
+    .task{
+      background: #334155;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+    }
+
+    .task:hover{
+      transform: scale(1.02);
+      background: #475569;
+    }
+
+    input[type="checkbox"]{
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    label{
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    .footer{
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>✅ Lista de Tarefas</h1>
+
+    <div class="task">
+      <input type="checkbox" id="t1">
+      <label for="t1">Acordar cedo</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t2">
+      <label for="t2">Arrumar a cama</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t3">
+      <label for="t3">Estudar programação</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t4">
+      <label for="t4">Fazer atividades</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t5">
+      <label for="t5">Atualizar portfólio</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t6">
+      <label for="t6">Treinar Python</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t7">
+      <label for="t7">Fazer exercícios físicos</label>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" id="t8">
+      <label for="t8">Dormir cedo</label>
+    </div>
+
+    <div class="footer">
+      Feito por Pedro Dias 🚀
+    </div>
+  </div>
+
+</body>
+</html>
